@@ -1,0 +1,50 @@
+{"query": "北京现在多少度", "expected": ["query_current_weather"], "scene": "weather"}
+{"query": "上海明天会下雨吗", "expected": ["query_weather_forecast"], "scene": "weather"}
+{"query": "广州未来一周的天气走势", "expected": ["query_weather_forecast"], "scene": "weather"}
+{"query": "上周三亚的天气怎么样", "expected": ["query_weather_history"], "scene": "weather"}
+{"query": "深圳此刻外面热不热", "expected": ["query_current_weather"], "scene": "weather"}
+{"query": "杭州接下来三天的气温变化", "expected": ["query_weather_forecast"], "scene": "weather"}
+{"query": "成都昨天最高温是多少", "expected": ["query_weather_history"], "scene": "weather"}
+{"query": "南京今天适合穿短袖吗", "expected": ["query_current_weather"], "scene": "weather"}
+{"query": "深圳市南山区科技园的坐标", "expected": ["geocode_address"], "scene": "geo"}
+{"query": "22.5431, 114.0579 这个位置在哪", "expected": ["reverse_geocode"], "scene": "geo"}
+{"query": "北京到上海直线距离多少公里", "expected": ["haversine_distance"], "scene": "geo"}
+{"query": "用户在不在中关村软件园范围内", "expected": ["check_geofence"], "scene": "geo"}
+{"query": "帮我找一下上海市黄浦区南京东路的经纬度", "expected": ["geocode_address"], "scene": "geo"}
+{"query": "这两个坐标点之间有多远", "expected": ["haversine_distance"], "scene": "geo"}
+{"query": "判断这个点是否在画好的配送区域里", "expected": ["check_geofence"], "scene": "geo"}
+{"query": "116.404, 39.915 是哪个街道", "expected": ["reverse_geocode"], "scene": "geo"}
+{"query": "8.8.8.8 是哪里的IP", "expected": ["query_ip_geolocation"], "scene": "ip"}
+{"query": "这个IP属于哪个运营商", "expected": ["query_ip_asn"], "scene": "ip"}
+{"query": "1.1.1.1 有没有恶意记录", "expected": ["query_ip_threat_intel"], "scene": "ip"}
+{"query": "查询IP 114.114.114.114 的地理位置", "expected": ["query_ip_geolocation"], "scene": "ip"}
+{"query": "这个IP背后的AS号是什么", "expected": ["query_ip_asn"], "scene": "ip"}
+{"query": "该IP是否被标记为攻击源", "expected": ["query_ip_threat_intel"], "scene": "ip"}
+{"query": "172.217.0.0 这个IP位于哪个国家", "expected": ["query_ip_geolocation"], "scene": "ip"}
+{"query": "检查IP 203.0.113.5 的威胁等级", "expected": ["query_ip_threat_intel"], "scene": "ip"}
+{"query": "100美元能换多少人民币", "expected": ["convert_currency"], "scene": "currency"}
+{"query": "今天美元兑人民币汇率", "expected": ["query_exchange_rate"], "scene": "currency"}
+{"query": "500欧元值多少日元", "expected": ["convert_currency"], "scene": "currency"}
+{"query": "英镑和港币现在的汇率比", "expected": ["query_exchange_rate"], "scene": "currency"}
+{"query": "帮我把 2500 港币换算成美元", "expected": ["convert_currency"], "scene": "currency"}
+{"query": "现在 1 欧元能换多少人民币", "expected": ["query_exchange_rate"], "scene": "currency"}
+{"query": "把 10000 日元转成人民币是多少", "expected": ["convert_currency"], "scene": "currency"}
+{"query": "澳元对加元的实时汇率", "expected": ["query_exchange_rate"], "scene": "currency"}
+{"query": "订单 ORD-ABC123 的状态", "expected": ["query_order"], "scene": "order"}
+{"query": "我的订单到哪了，能查一下物流吗", "expected": ["query_order_logistics"], "scene": "order"}
+{"query": "列出我最近买的东西", "expected": ["list_orders"], "scene": "order"}
+{"query": "这个订单不要了，帮我取消", "expected": ["cancel_order"], "scene": "order"}
+{"query": "我买的东西有问题，想退款", "expected": ["refund_order"], "scene": "order"}
+{"query": "查一下我上个月的订单", "expected": ["list_orders"], "scene": "order"}
+{"query": "ORD-XYZ789 这个单子还能退吗", "expected": ["query_order", "refund_order"], "scene": "order"}
+{"query": "这个订单的快递单号是多少", "expected": ["query_order_logistics"], "scene": "order"}
+{"query": "用户 u_10001 的账号信息", "expected": ["query_user_profile"], "scene": "private"}
+{"query": "我提的工单处理得怎么样了", "expected": ["query_ticket"], "scene": "private"}
+{"query": "帮我创建一个工单反映登录问题", "expected": ["create_ticket"], "scene": "private"}
+{"query": "查一下 TKT-ABC123 的状态", "expected": ["query_ticket"], "scene": "private"}
+{"query": "这个用户的套餐是什么级别的", "expected": ["query_user_profile"], "scene": "private"}
+{"query": "我遇到问题需要报障", "expected": ["create_ticket"], "scene": "private"}
+{"query": "用户等级和标签是什么", "expected": ["query_user_profile"], "scene": "private"}
+{"query": "TKT-20240115 现在分配给谁了", "expected": ["query_ticket"], "scene": "private"}
+{"query": "帮我查下订单 ORD-ABC123 的详情，顺便看看快递到哪了", "expected": ["query_order", "query_order_logistics"], "scene": "order"}
+{"query": "我要退这个订单，金额是 199", "expected": ["refund_order"], "scene": "order"}
